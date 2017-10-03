@@ -4,12 +4,6 @@
     </head>
     <body>
         <style>
-.so-info-size {
-    font-size: 1rem;
-}
-.so-info-color {
-    color: #000;
-}
 .so-list-wrapper {
     max-width: 600px;
     max-height: 600px;
@@ -31,39 +25,112 @@
     color: #fff;
     border-radius: 5px;
     border: 1px solid #269abc;
-    margin-bottom: .7em;
+    margin-bottom: .5em;
     padding: .5em;
-    height: 150px;
+    height: 140px;
     -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
     box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
     cursor: pointer;
-}
-.so-list-card .card-content-holder {
     position: relative;
 }
-.card-content-holder div.so-order {
-    float: left;
-    margin-right: 1em;
+
+.so-list-card div[class^='so-label-row'] {
+    font-size: .7em;
+    position: relative;
+}
+.so-list-card div[class^='so-info-row'] {
+    position: relative;
+    font-size: 1.3em;
+    color: #000;
 }
 
-        </style>
+div.so-label-row-1 > div.label-l {
+    position: absolute;
+    top: 0;
+    left: 2%;
+}
+div.so-label-row-1 > div.label-r {
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+div.so-info-row-1 > div.info-l {
+    position: absolute;
+    top: 10px;
+    left: 2%;
+}
+div.so-info-row-1 > div.info-r {
+    position: absolute;
+    top: 10px;
+    right: 3%;
+}
 
+div.so-label-row-2 > div.label-l {
+    position: absolute;
+    top: 38px;
+    left: 2%;
+}
+div.so-info-row-2 > div.info-l {
+    position: absolute;
+    top: 48px;
+    left: 2%;
+}
+
+div.so-label-row-3 > div.label-l {
+    position: absolute;
+    top: 100px;
+    left: 2%;
+}
+div.so-label-row-3 > div.label-r {
+    position: absolute;
+    top: 100px;
+    right: 3%;
+}
+div.so-info-row-3 > div.info-l {
+    position: absolute;
+    top: 111px;
+    left: 2%;
+}
+div.so-info-row-3 > div.info-r {
+    position: absolute;
+    top: 111px;
+    right: 3%;
+}
+        </style>
         <div class="so-list-wrapper">
             <div id="SoListItem" data-sono="000003" data-tailno="NX1739" data-actype="Hawker 750" data-accat="LESS THAN DC-9"
                 data-socustno="111112" data-domintl="D" data-flightno="45DFA8" data-flighttype="CORPORATE" data-itemcode="Jeta'"
                 data-itemname="JET FUEL" data-qty="81.99" class="so-list-card" value="000003">
-                <div class="card-content-holder">
-                    <div class="so-order">Sales Order No:</div>
-                    <div>000003</div>
-                    <div class="so-order">Customer:</div>
-                    <div class="">Cust C</div>
-                    <div class="so-order">Tail No:</div>
-                    <div class="">NX1739</div>
-                    <div class="so-order">Flight No:</div>
-                    <div class="">45DFA8</div>
-                    <div class="so-order">Card No:</div>
-                    <div class="">90638</div>
-                </div>
+                <!-- <div class="card-content-holder"> -->
+                    <div class="so-label-row-1">
+                        <div class="label-l">Sales Order No:</div>
+                        <div class="label-r">Tail No.:</div>    
+                    </div>
+                    <div class="so-info-row-1">
+                        <div class="info-l">000003</div>
+                        <div class="info-r">NX1739</div>
+                    </div>
+                    <div class="so-label-row-2">
+                        <div class="label-l">Customer:</div>
+                    </div>
+                    <div class="so-info-row-2">
+                        <div class="info-l">Jet Aviation Inc Of Lake Geneva Wisconsin</div>
+                    </div>
+                    <div class="so-label-row-3">
+                        <div class="label-l">Flight No.:</div>
+                        <div class="label-r">Last 4 of Card:</div>    
+                    </div>
+                    <div class="so-info-row-3">
+                        <div class="info-l">45DFA8</div>
+                        <div class="info-r">0638</div>
+                    </div>
+                    <!-- <div class="so-order">Customer:</div>
+                    <div class="so-info">Cust C</div>
+                    <div class="so-order">Flight No.:</div>
+                    <div class="so-info">45DFA8</div>
+                    <div class="so-order">Card No. (last 4):</div>
+                    <div class="so-info">90638</div> -->
+                <!-- </div> -->
             </div>
             <div id="SoListItem" data-sono="000004" data-tailno="NX1739" data-actype="Hawker 750" data-accat="LESS THAN DC-9"
                     data-socustno="111113" data-domintl="I" data-flightno="45DFA8" data-flighttype="CORPORATE" data-itemcode="Jeta'"
